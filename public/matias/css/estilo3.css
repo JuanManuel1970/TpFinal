@@ -1,0 +1,50 @@
+.main{ display: flex;
+ background-size: cover;
+  height:100vh;
+align-items: center;
+background-color: #000000;
+justify-content:right;
+align-items:center;
+padding: 50px;
+flex-direction:row;
+min-width: column;
+}
+
+  
+
+.footer{
+  background:#000000 ;
+  color: rgb(0, 245, 61);
+  text-align: center;
+  padding: 2em;
+
+}
+
+.footer .footer-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer p a{
+  color: #ff0000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+  
+   .main .insta {color:red;margin-bottom: 100px;transition: .3s;}
+   .main .face {color:rgb(0, 26, 255);margin-bottom: 100px;padding: 45px;transition: .3s;}
+   .main .wat {color:rgb(0, 162, 38);margin-bottom: 100px;transition: .3s;}
+
+   .main .insta:hover {color:red;margin-bottom: 125px;}
+   .main .face:hover {color:rgb(0, 26, 255);margin-bottom: 125px;padding: 45px;}
+   .main .wat:hover {color:rgb(0, 162, 38);margin-bottom: 125px;}
+
+
+
+  .main .insta , .face , .wat {margin-top: 500px;display: flex;}

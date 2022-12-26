@@ -1,0 +1,69 @@
+.main{
+ 
+    width: 100%;
+    min-height: px;
+    display: flex;
+    align-items: center;
+    background-size:cover;
+    background-position:top;
+    background-color: #ff0000;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+  }
+
+  
+
+.youtube{
+  background-color: rgb(0, 0, 0);
+color: #ff0000;
+transition:  .5s;
+}
+
+
+.youtube:hover{
+    background-color: rgb(0, 0, 0);
+  color: #0026ff;
+
+  }
+  
+
+  .footer{
+    background:#000000 ;
+    color: rgb(0, 245, 61);
+    text-align: center;
+    padding: 2em;
+  
+  }
+  
+  .footer .footer-title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .footer p{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .footer p a{
+    color: #ff0000;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .videos{
+    background-color: black;
+    text-align: center;
+    padding-bottom: 320px;
+    padding-top: 50px;
+  }
+  .videos h1{color: rgb(255, 255, 255);}
+
+  .container{display: flex;
+justify-content: space-around;}
+
+.container span{color: #ffffff;
+font: bold;
+text-decoration: none;
+font-size: x-large;
+font-display: none;
+}

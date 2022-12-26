@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="icon" href="../iconos/utn.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="colores.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Calculadora</title>
+</head>
+   
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Home</a>
+     
+    </div>
+  </nav>
+
+<body>
+   
+    <div class="container">
+        <hr>
+        <h1 class="animate__animated animate__rubberBand">Calculadora js</h1>
+        <hr>
+        <div class="m-5">
+            <div class="animate__animated animate__backInUp">
+            <button onclick="iniciar()"  class="btn btn-success">Iniciar Calculos</button>
+            </div>
+        </div>
+        <hr>
+       
+        </div>
+        <div class="animate__animated animate__lightSpeedInRight">
+        <hr class="linea" >
+             
+                    <button class="botones" class="animate__animated animate__backInUp " onclick="sumar()"  >Suma</button>
+                    <button class="botones" class="animate__animated animate__backInRight" onclick="restar()">Resta</button>
+                    <button class="botones" class="animate__animated animate__backInLeft" onclick="multiplicar()"">Multiplicacion</button>
+                    <button class="botones" class="animate__animated animate__backInUp" onclick="dividir()" >Division</button>
+        </div>
+
+        <div class="m-3">
+            <h3  id="resultado">El resultado de la operacion es: </h3>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

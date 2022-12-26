@@ -1,0 +1,36 @@
+body{
+    background: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.container{
+    margin-top: 45px;
+}
+
+h1 {font-size: 60px;color: rgb(255, 68, 0);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {font-size: 35px;color: rgb(0, 0, 255);font-family:monospace;
+}
+.linea {color: aquamarine;}
+
+.botones {color :white;height: 50px;width: 150px;background-color: rgb(3, 97, 179);border: solid 2px gray;border-radius:100px;
+display: inline-block;margin: 20px;transition: .3s;
+}
+
+.botones:hover {color :rgb(21, 0, 255);height: 40px;width: 170px;background-color: rgb(48, 46, 46);border-radius: none;
+    display: inline-block;margin: 20px;font-size: large;
+    }
+
+    @keyframes anim{
+        0% {background-color: #ff0;} /*Amarillo*/
+       25% {background-color: rgb(226, 134, 30);} /*Naranja*/
+       50% {background-color: rgb(143, 65, 13);} /*Negro*/
+       75% {background-color: rgb(85, 48, 6);} /*Otra vez naranja*/
+      100% {background-color: rgb(2, 2, 2);} /*Otra vez amarillo*/
+    }
+    body {
+      animation-name: anim;
+      animation-duration: 5s;
+      animation-iteration-count:initial;
+    }

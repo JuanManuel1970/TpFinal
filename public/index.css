@@ -1,0 +1,430 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+
+  section{
+      padding: 100px 200px;
+    }
+
+  .main{
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: url(./imagenes/portada.jpg)no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      box-shadow: 0 5px 5px rgb(10, 0, 0)
+  }
+  .main .content{
+      max-width: 800px;
+  }
+  .main .content h2{
+      color: rgb(255, 251, 0);
+      font-size: 2em;
+      font-weight: 500;
+  }
+  .main .content h2 span{
+      font-size: 2.8em;
+      font-weight: 600;
+  }
+  .animated-text{
+      position: relative;
+      height: 70px;
+      overflow: hidden;
+    }
+    
+    .animated-text h3{
+      color: #06ec66;
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 70px;
+      letter-spacing: 1px;
+    }
+    
+    .animated-text h3:nth-child(1){
+      animation: text-move 10s infinite;
+    }
+    
+    @keyframes text-move{
+      0%{
+        margin-top: 0;
+      }
+      25%{
+        margin-top: -70px;
+      }
+      50%{
+        margin-top: -140px;
+      }
+      75%{
+        margin-top: -70px;
+      }
+      100%{
+        margin-top: 0;
+      }
+    }
+  
+.yo{
+  background: url(./imagenes/lenguaje-2022-1.webp)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+color: rgb(255, 255, 255);
+}
+.yo .content{        
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      
+  }
+  .yo .content .col-left{
+      position: relative;
+      width: 45%;
+  }
+  .yo .content .col-right{
+    position: relative;
+    width: 50%;
+    
+  }
+  .yo .content .col-left .img-card{
+      position: relative;
+      width: 100%;
+      min-height: 500px;
+      transition:all .8s linear
+      }
+
+     
+  .yo .content .col-left .img-card img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      border-radius: 10px;
+      box-shadow: 5px 5px 3px rgb(0, 0, 0);
+  }
+  
+  .yo .content .col-right .content-title{
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+   
+  
+  .habilidades {    
+   
+    box-shadow: 0 5px 5px rgb(10, 0, 0);
+    background: url(./imagenes/k.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+color: white;
+  }
+  
+  .habilidades .content{
+  
+    margin-top: 5px;
+    margin-bottom: 80px;
+  }
+  
+  
+  
+  .habilidades .content .col-left .img-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgb(0, 0, 0);
+  }
+
+  .habilidades .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .habilidades .content .col-left{
+    position: relative;
+    width: 90%;
+    margin-right: 50px;
+  }
+  
+  
+  
+  .habilidades .content .col-right{
+    position: relative;
+    width: 90%;
+  }
+  
+  .habilidades .content .col-right .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .habilidades .content .col-right .bar .line{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: rgba(3, 214, 3, 0.11);
+    border-radius: 4px;
+  }
+  .habilidades .content .col-right .bar .line:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+  }
+  .habilidades .content .col-right .bar .html:before{
+    width: 70%;
+    background: #04ad59;
+    
+  }
+  
+  .habilidades .content .col-right .bar .css:before{
+    width: 60%;
+    background: #04ad59;
+    
+  }
+  
+  .habilidades .content .col-right .bar .javascript:before{
+    width: 35%;
+    background: #d36922;
+    
+  }
+  
+  .habilidades .content .col-right .bar .node:before{
+    width: 20%;
+    background: #d32222;
+    
+  }
+  
+  .habilidades .content .col-right .bar .mysql:before{
+    width: 20%;
+    background: #d32222;
+    
+  }
+  
+  .contacto1{
+
+    background: url(./imagenes/bg.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+color: white;
+  }
+  
+  .contacto {display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3em ;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+   }
+
+
+.container {background-color: #1e1e6e;
+     margin-bottom: 100px;
+     border-radius:100px;
+     box-shadow: 5px 5px 3px rgb(0, 0, 0);
+     
+       }
+
+
+.form-group {margin-top:25px;
+  display: flex;
+  justify-content: center;
+  }
+
+#apellido, #nombre, #telefono, #email, #mensaje, #boton {
+  background-color: transparent;
+border: none;
+border-bottom: 3px solid #21de04;
+color: white;
+}
+  
+  
+#mensaje:focus{
+background-color: #222;
+outline: none;
+}
+
+#nombre:focus{
+  background-color: #222;
+}
+
+#apellido:focus{
+    background-color: #222;
+}
+
+#email:focus{
+background-color: #222;
+}
+
+#telefono:focus{
+background-color: #222;
+ }
+  
+#boton {margin-bottom: 20px;color: rgb(238, 250, 0);font: bold;font-size: x-large;transition: .9s;}  
+#boton:hover {margin-bottom: 20px;color: rgb(250, 0, 0);font: bold;font-size: x-large;background-color: #6fff00;border: none;box-shadow: 0 5px 5px rgb(10, 0, 0)}  
+  
+.datos{ margin: 50px;
+text-align: center;
+
+
+}
+
+.datos h1 {color: rgb(0, 0, 0);
+  background-color: #3a6cf4;
+border-radius: 100px;
+margin-bottom: 100;
+margin-top: 50vh;
+box-shadow: 0 5px 5px rgb(10, 0, 0)
+}
+
+
+#yo{
+  color: #0681ec;
+  font-size:x-large;
+}
+
+.volver{color: rgb(0, 0, 0);
+  display: inline-block;
+  background-color: #3a56f4;
+  text-align:right;
+  width: 95px;
+border-radius: 100px;
+margin-left: 45%;
+margin-bottom: 900px;
+box-shadow: 0 5px 7px rgb(3, 240, 244);
+transition: .5s;
+}
+  
+.volver:hover{color: rgb(255, 255, 255);
+  background-color: #ff0000;
+  box-shadow: 0 5px 5px rgb(255, 255, 255);
+}
+  
+  
+.barra{background-color: #06ec66;}  
+  
+  
+ @media (max-width: 1040px){   
+  
+      section{
+        padding: 80px 20px;
+      }
+      
+  
+  
+  }
+  
+.redes svg{
+ margin-left: 200px;
+ margin-bottom: 100px;
+ margin-top: 50px;
+  float: line;
+  width: 60px;
+height: 60px;
+color: #6aff00;
+padding-left: -550px;
+transition: .5s;
+}
+  
+.redes svg:hover{
+  margin-left: 200px;
+  margin-bottom: 100px;
+   float: line;
+   width: 60px;
+ height: 60px;
+ color: #223ad3;
+ rotate: 180;
+ padding-left: -550px;
+ transform: rotate(360deg);
+
+ 
+ }
+
+ .redes .git svg:hover{
+  margin-left: 200px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+   float: line;
+   width: 60px;
+ height: 60px;
+ color: #000000;
+ padding-left: -550px;
+ transition: .5s;
+ }
+
+ .redes .insta svg:hover{
+  margin-left: 200px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+   float: line;
+   width: 60px;
+ height: 60px;
+ color: #ff0000;
+ padding-left: -550px;
+ transition: .5s;
+ }
+
+
+ .enviado{
+
+  background: url(./imagenes/programa.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+color: white;
+text-align: center;
+padding-top: 250px;
+
+ }
+
+   
+ .footer{
+  background:#000016 ;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer .footer-title{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p{
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer p a{
+  color: #3a6cf4;
+  font-weight: 600;
+  text-decoration: none;
+}
