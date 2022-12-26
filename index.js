@@ -56,6 +56,7 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 
 
+
 //rutas de la aplicacion
 
 app.get('/', (req, res) => {
