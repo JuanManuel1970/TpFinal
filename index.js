@@ -37,7 +37,7 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 
 
-
+//conexion a la base de datos
 
 //const conexion = mysql.createConnection({
 //host:process.env.HOST,
@@ -49,7 +49,7 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 //conexion.connect((err) =>{
 //   if(err) throw err;
-//   console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
+//  console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
 //})
 
 
@@ -139,7 +139,7 @@ app.post('/', (req, res) =>{
 
     conexion.query(sql, datos, function(err){
         if (err) throw err;
-            console.log(`1 Registro insertado`);
+            console.log(`Se ha registrado un ingreso de datos`);
             //Email
             envioMail().catch(console.error);
             res.render('enviado')
@@ -151,159 +151,4 @@ app.post('/', (req, res) =>{
 app.listen(PORT, ()=>{
     console.log(`Servidor trabajando en el Puerto: ${PORT}`);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.post('/formulario', (req, res) =>{    
-    const nombre = req.body.nombre;
-    const precio = req.body.precio;
-    const descripcion = req.body.descripcion;
-
-    let datos = {
-        nombre: nombre,
-        precio: precio,
-        descripcion: descripcion
-    }
-
-    let sql = "INSERT INTO productos set ?";
-
-    conexion.query(sql, datos, function(err){
-        if (err) throw err;
-            console.log(`1 Registro insertado`);
-            res.render('enviado')
-        })
-})
-
-
-
-
-
-
-
-
-
 
