@@ -18,39 +18,39 @@ app.use(express.static(path.join(__dirname,`public`)));
 
 
 
-//Configuramos el motor de plantillas de HBS 
+
 
 app.set(`view engine`,`hbs`);
 
-//configuramos la ubicacion de las plantillas 
+
 
 app.set(`views`, path.join(__dirname,`views`));
 
-//configuramos los parciales de los motores de plantillas
+
 
 hbs.registerPartials(path.join(__dirname,`views/parcials`)); 
 
 
 
 
-//crear base de datoy y despues se comenta
 
 
 
-//conexion a la base de datos
 
-//const conexion = mysql.createConnection({
-//host:process.env.HOST,
-//user:process.env.USER,
-//password:process.env.PASSWORD,
-//database:process.env.DATABASE,
-//port:process.env.DBPORT
-//});
 
-//conexion.connect((err) =>{
-//   if(err) throw err;
-//   console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
-//})
+
+const conexion = mysql.createConnection({
+host:process.env.HOST,
+user:process.env.USER,
+password:process.env.PASSWORD,
+database:process.env.DATABASE,
+port:process.env.DBPORT
+});
+
+conexion.connect((err) =>{
+  if(err) throw err;
+  console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
+})
 
 
 

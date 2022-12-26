@@ -7,7 +7,7 @@ use JuanManuel;
 
 
 
-drop table contactos;
+
 create table contactos(
 idContacto int unsigned not null auto_increment,
 nombre varchar(150) not null,
