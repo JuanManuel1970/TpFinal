@@ -56,7 +56,6 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 
 
-
 //rutas de la aplicacion
 
 app.get('/', (req, res) => {
@@ -97,55 +96,59 @@ app.get('/matias', (req, res) => {
 
 
 app.post('/', (req, res) =>{
-    const nombre = req.body.nombre;
-    const apellido = req.body.apellido;
-    const telefono = req.body.telefono;
-    const email = req.body.email;
-    const mensaje = req.body.mensaje;
+  //  const nombre = req.body.nombre;
+  //  const apellido = req.body.apellido;
+  //  const telefono = req.body.telefono;
+  //  const email = req.body.email;
+  //  const mensaje = req.body.mensaje;
 
 
     //Creamos una función para enviar Email al cliente
-    async function envioMail(){
+    //async function envioMail(){
         //Configuramos la cuenta del envío
-        let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: process.env.EMAIL,
-                pass: process.env.EMAILPASSWORD
-            }
-        });
+     //   let transporter = nodemailer.createTransport({
+      //      host: 'smtp.gmail.com',
+       //     port: 465,
+       //     secure: true,
+       //     auth: {
+       //         user: process.env.EMAIL,
+        //        pass: process.env.EMAILPASSWORD
+        res.json({
+
+        Probando: ` deploy sin la base de datos`
+        })
+})
+        //});
 
         //Envío del mail
-        let info = await transporter.sendMail({
-            from: process.env.EMAIL,
-            to: `${email}`,
-            subject: "Gracias por suscribirte a nuestra App",
-            html:`Muchas gracias por visitar mi página <br>
-            Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
-        })
-    }
+       // let info = await transporter.sendMail({
+        //    from: process.env.EMAIL,
+         //   to: `${email}`,
+          //  subject: "Gracias por suscribirte a nuestra App",
+           // html:`Muchas gracias por visitar mi página <br>
+           // Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
+       // })
+   // }
 
-    let datos = {
-        nombre: nombre,
-        apellido: apellido,
-        telefono: telefono,
-        email: email,
-        mensaje : mensaje
-    }
+    //let datos = {
+     //   nombre: nombre,
+      //  apellido: apellido,
+       // telefono: telefono,
+       // email: email,
+       // mensaje : mensaje
+   // }
 
-    let sql = "INSERT INTO contactos set ?";
+   // let sql = "INSERT INTO contactos set ?";
 
-    conexion.query(sql, datos, function(err){
-        if (err) throw err;
-            console.log(`Se ha registrado un ingreso de datos`);
+    //conexion.query(sql, datos, function(err){
+     //   if (err) throw err;
+      //      console.log(`Se ha registrado un ingreso de datos`);
             //Email
-            envioMail().catch(console.error);
-            res.render('enviado')
-        })
+        //    envioMail().catch(console.error);
+         //   res.render('enviado')
+       // })
 
-})
+//})
 
 //Servidor a la escucha de las peticiones
 app.listen(PORT, ()=>{
