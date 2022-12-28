@@ -39,18 +39,18 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 //conexion a la base de datos
 
-//const conexion = mysql.createConnection({
-//host:process.env.HOST,
-//user:process.env.USER,
-//password:process.env.PASSWORD,
-//database:process.env.DATABASE,
-//port:process.env.DBPORT
-//});
+/*const conexion = mysql.createConnection({
+host:process.env.HOST,
+user:process.env.USER,
+password:process.env.PASSWORD,
+database:process.env.DATABASE,
+port:process.env.DBPORT
+});
 
-//conexion.connect((err) =>{
-//   if(err) throw err;
-//  console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
-//})
+conexion.connect((err) =>{
+   if(err) throw err;
+  console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
+})*/
 
 
 
@@ -96,29 +96,29 @@ app.get('/matias', (req, res) => {
 
 
 app.post('/', (req, res) =>{
-  //  const nombre = req.body.nombre;
-  //  const apellido = req.body.apellido;
-  //  const telefono = req.body.telefono;
-  //  const email = req.body.email;
-  //  const mensaje = req.body.mensaje;
+  /*  const nombre = req.body.nombre;
+    const apellido = req.body.apellido;
+    const telefono = req.body.telefono;
+    const email = req.body.email;
+    const mensaje = req.body.mensaje;
 
 
     //Creamos una función para enviar Email al cliente
-    //async function envioMail(){
+    async function envioMail(){
         //Configuramos la cuenta del envío
-     //   let transporter = nodemailer.createTransport({
-      //      host: 'smtp.gmail.com',
-       //     port: 465,
-       //     secure: true,
-       //     auth: {
-       //         user: process.env.EMAIL,
-        //        pass: process.env.EMAILPASSWORD
-        res.json({
+        let transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
+            auth: {
+                user: process.env.EMAIL,
+                pass: process.env.EMAILPASSWORD
+       */ res.json({
 
-        Probando: ` deploy sin la base de datos`
+            probando: ` deploy sin la base de datos`
         })
 })
-        //});
+        /*});
 
         //Envío del mail
        // let info = await transporter.sendMail({
@@ -148,7 +148,7 @@ app.post('/', (req, res) =>{
          //   res.render('enviado')
        // })
 
-//})
+})*/
 
 //Servidor a la escucha de las peticiones
 app.listen(PORT, ()=>{
