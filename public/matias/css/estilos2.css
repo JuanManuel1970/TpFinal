@@ -1,8 +1,6 @@
 .main{
- 
-    width: 100%;
-    min-height: px;
-    display: flex;
+     width: 100%;
+       display: flex;
     align-items: center;
     background-size:cover;
     background-position:top;
@@ -61,9 +59,10 @@ transition:  .5s;
   .container{display: flex;
 justify-content: space-around;}
 
-.container span{color: #ffffff;
+.container .span{color: #ffffff;
 font: bold;
 text-decoration: none;
 font-size: x-large;
-font-display: none;
+
+
 }

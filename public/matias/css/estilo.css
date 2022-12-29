@@ -6,17 +6,26 @@
 }
 
 .main{
-  position: relative;
-  background: url(../imagenes/bg.jpg)no-repeat;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   background-size:cover;
-  background-position:top;
-  background-color: #000000;
-  box-shadow: 0 5px 5px rgb(0, 0, 0);
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-image: url(../imagenes/bg.jpg);
+  background-size: 180%;
+  animation: movimiento 15s infinite linear alternate;  
 }
+
+@keyframes movimiento{
+  from{
+      background-position: bottom left;
+  }to{
+      background-position: top right;
+  }
+}
+
 
 .main .apertura{
   margin: 500px;
@@ -75,21 +84,10 @@ padding-bottom: 20PX;
 transition: .5s;
 }
 
-.titulo1:hover{position: relative;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: flex;
-  color: #ff0000;
-  background-color: #000000;
-  justify-content: center;
-  padding-bottom: 20PX;
-  }
-
-.h1{background-color: #0c0909;}
 
 
 
- .footer{
-    background:#000000 ;
+ .footer{   background:#000000 ;
     color: rgb(0, 245, 61);
     text-align: center;
     padding: 2em;
@@ -113,24 +111,32 @@ transition: .5s;
   }
 
   .videos{
-    color: #afb6cf;
-    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
     background-color: #000000;
-background-color: rgb(0, 0, 0);
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
   }
-
-
-@keyframes rotar{
+  .conteiner .videos .span{
+    color: #0066ff;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  @keyframes rotar{
     from{
-        transform: rotateY(0deg);
+      transform: rotateY(0deg);
     }to{
-        transform: rotateY(360deg);
+      transform: rotateY(360deg);
     }
-}
-
-
+  }
+  
+  .conteiner h1{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0afa9e;
+    text-align: center;
+  }
 
 
   .galeria .titulo{
@@ -139,20 +145,95 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #000000;
   }
 
-  span{display: block ; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;font: bold;
+  .cartel{display: block ; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;font: bold;
     white-space: nowrap;
     width: 30ch;
     animation:typing 3.5s steps(30),
     blink .5s infinite step-end
     alternate;
+    margin-top: 350px;
     overflow: hidden;
   color: #ff0000;}
 
+  
+  
+  .videos span{display: block ; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;font: bold;
+    white-space: nowrap;
+    width: 38ch;
+    animation:typing 3.5s steps(30),
+    blink .5s infinite step-end
+    alternate;
+    overflow: hidden;
+    color: #00a2ff;}
+    
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 48px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #028992;
+    box-shadow: 0 0 10px #00ceab, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+    
     @keyframes typing{ from {width: 0} ;}
     @keyframes blink {80%{border-color:transparent;}
-
-   
-    
-
-
  
