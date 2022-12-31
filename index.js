@@ -37,7 +37,7 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 
 
-//conexion a la base de datos
+
 
 /*const conexion = mysql.createConnection({
 host:process.env.HOST,
@@ -56,7 +56,7 @@ conexion.connect((err) =>{
 
 
 
-//rutas de la aplicacion
+
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -96,14 +96,14 @@ app.get('/matias', (req, res) => {
 
 
 app.post('/', (req, res) =>{
-  /*  const nombre = req.body.nombre;
+  /*const nombre = req.body.nombre;
     const apellido = req.body.apellido;
     const telefono = req.body.telefono;
     const email = req.body.email;
     const mensaje = req.body.mensaje;
 
 
-    //Creamos una función para enviar Email al cliente
+    
     async function envioMail(){
         //Configuramos la cuenta del envío
         let transporter = nodemailer.createTransport({
@@ -113,44 +113,43 @@ app.post('/', (req, res) =>{
             auth: {
                 user: process.env.EMAIL,
                 pass: process.env.EMAILPASSWORD
-       */ res.json({
-
+            }
+        */res.json({
             probando: ` deploy sin la base de datos`
         })
-})
-        /*});
+        });/*
 
-        //Envío del mail
-       // let info = await transporter.sendMail({
-        //    from: process.env.EMAIL,
-         //   to: `${email}`,
-          //  subject: "Gracias por suscribirte a nuestra App",
-           // html:`Muchas gracias por visitar mi página <br>
-           // Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
-       // })
-   // }
+       
+        let info = await transporter.sendMail({
+            from: process.env.EMAIL,
+            to: `${email}`,
+            subject: "Gracias por suscribirte a nuestra App",
+            html:`Muchas gracias por visitar mi página <br>
+            Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
+        })
+    }
 
-    //let datos = {
-     //   nombre: nombre,
-      //  apellido: apellido,
-       // telefono: telefono,
-       // email: email,
-       // mensaje : mensaje
-   // }
+    let datos = {
+        nombre: nombre,
+        apellido: apellido,
+        telefono: telefono,
+        email: email,
+        mensaje : mensaje
+    }
 
-   // let sql = "INSERT INTO contactos set ?";
+    let sql = "INSERT INTO contactos set ?";
 
-    //conexion.query(sql, datos, function(err){
-     //   if (err) throw err;
-      //      console.log(`Se ha registrado un ingreso de datos`);
+    conexion.query(sql, datos, function(err){
+        if (err) throw err;
+            console.log(`Se ha registrado un ingreso de datos`);
             //Email
-        //    envioMail().catch(console.error);
-         //   res.render('enviado')
-       // })
+            envioMail().catch(console.error);
+            res.render('enviado')
+        })
 
 })*/
 
-//Servidor a la escucha de las peticiones
+
 app.listen(PORT, ()=>{
     console.log(`Servidor trabajando en el Puerto: ${PORT}`);
 })
