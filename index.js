@@ -37,6 +37,10 @@ hbs.registerPartials(path.join(__dirname,`views/parcials`));
 
 
 
+/*-----PARA QUE FUNCIONE CON LA BASE DE DATOS HAY QUE DESCOMENTAR----
+-------LO QUE ESTA COMENTADO AHORA Y COMENTAR LAS LINEAS ----
+-------121 - 122 Y  123 */
+
 
 
 /*const conexion = mysql.createConnection({
