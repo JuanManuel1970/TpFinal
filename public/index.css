@@ -87,15 +87,22 @@ color: rgb(255, 255, 255);
       margin-top: 20px;
       
   }
+
+.yo .descripcion{
+
+  font-weight: bold;
+  color: #ffe600;
+} 
+
   .yo .content .col-left{
       position: relative;
       width: 45%;
   }
+  
   .yo .content .col-right{
     position: relative;
     width: 50%;
-    
-  }
+      }
   .yo .content .col-left .img-card{
       position: relative;
       width: 100%;

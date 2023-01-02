@@ -127,7 +127,7 @@ app.post('/', (req, res) =>{
         let info = await transporter.sendMail({
             from: process.env.EMAIL,
             to: `${email}`,
-            subject: "Gracias por suscribirte a nuestra App",
+            subject: "Gracias por contactarme!!!",
             html:`Muchas gracias por visitar mi página <br>
             Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
         })
