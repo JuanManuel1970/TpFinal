@@ -318,22 +318,7 @@ box-shadow: 0 5px 5px rgb(10, 0, 0)
   font-size:x-large;
 }
 
-.volver{color: rgb(0, 0, 0);
-  display: inline-block;
-  background-color: #3a56f4;
-  text-align:right;
-  width: 95px;
-border-radius: 100px;
-margin-left: 45%;
-margin-bottom: 900px;
-box-shadow: 0 5px 7px rgb(3, 240, 244);
-transition: .5s;
-}
-  
-.volver:hover{color: rgb(255, 255, 255);
-  background-color: #ff0000;
-  box-shadow: 0 5px 5px rgb(255, 255, 255);
-}
+
   
   
 .barra{background-color: #06ec66;}  
@@ -412,6 +397,7 @@ padding-top: 250px;
 
  }
 
+/*footer*/
    
  .footer{
   background:#000016 ;

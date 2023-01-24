@@ -36,14 +36,14 @@ min-width: column;
 }
 
   
-   .main .insta {color:red;margin-bottom: 100px;transition: .3s;}
-   .main .face {color:rgb(0, 26, 255);margin-bottom: 100px;padding: 45px;transition: .3s;}
-   .main .wat {color:rgb(0, 162, 38);margin-bottom: 100px;transition: .3s;}
+   .redes .insta {color:red;margin-bottom: 100px;transition: .3s;}
+   .redes .face {color:rgb(0, 26, 255);margin-bottom: 100px;padding: 45px;transition: .3s;}
+   .redes .wat {color:rgb(0, 162, 38);margin-bottom: 100px;transition: .3s;}
 
-   .main .insta:hover {color:red;margin-bottom: 125px;}
-   .main .face:hover {color:rgb(0, 26, 255);margin-bottom: 125px;padding: 45px;}
-   .main .wat:hover {color:rgb(0, 162, 38);margin-bottom: 125px;}
+   .redes .insta:hover {color:red;margin-bottom: 125px;}
+   .redes .face:hover {color:rgb(0, 26, 255);margin-bottom: 125px;padding: 45px;}
+   .redes .wat:hover {color:rgb(0, 162, 38);margin-bottom: 125px;}
 
 
 
-  .main .insta , .face , .wat {margin-top: 500px;display: flex;}
+  .redes .insta , .face , .wat {margin-top: 500px;display: flex;}

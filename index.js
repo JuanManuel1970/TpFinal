@@ -50,7 +50,6 @@ password:process.env.PASSWORD,
 database:process.env.DATABASE,
 port:process.env.DBPORT
 });
-
 conexion.connect((err) =>{
    if(err) throw err;
   console.log(`Conectado a la Base de datos de : ${process.env.DATABASE}`);
@@ -105,8 +104,6 @@ app.post('/', (req, res) =>{
     const telefono = req.body.telefono;
     const email = req.body.email;
     const mensaje = req.body.mensaje;
-
-
     
     async function envioMail(){
         //Configuramos la cuenta del envío
@@ -122,7 +119,6 @@ app.post('/', (req, res) =>{
             probando: ` deploy sin la base de datos`
         })
         });/*
-
        
         let info = await transporter.sendMail({
             from: process.env.EMAIL,
@@ -132,7 +128,6 @@ app.post('/', (req, res) =>{
             Me pondre en contacto con vos , lo antes posible ...Saludos!!! <br>`
         })
     }
-
     let datos = {
         nombre: nombre,
         apellido: apellido,
@@ -140,9 +135,7 @@ app.post('/', (req, res) =>{
         email: email,
         mensaje : mensaje
     }
-
     let sql = "INSERT INTO contactos set ?";
-
     conexion.query(sql, datos, function(err){
         if (err) throw err;
             console.log(`Se ha registrado un ingreso de datos`);
@@ -150,11 +143,9 @@ app.post('/', (req, res) =>{
             envioMail().catch(console.error);
             res.render('enviado')
         })
-
 })*/
 
 
 app.listen(PORT, ()=>{
     console.log(`Servidor trabajando en el Puerto: ${PORT}`);
 })
-
