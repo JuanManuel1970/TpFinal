@@ -36,14 +36,11 @@ min-width: column;
 }
 
   
-   .redes .insta {color:red;margin-bottom: 100px;transition: .3s;}
-   .redes .face {color:rgb(0, 26, 255);margin-bottom: 100px;padding: 45px;transition: .3s;}
-   .redes .wat {color:rgb(0, 162, 38);margin-bottom: 100px;transition: .3s;}
+.redes .insta {color:red;margin-bottom: 100px;transition: .3s;}
+.redes .face {color:rgb(0, 26, 255);margin-bottom: 1500px;padding: 45px;transition: .3s;}
+.redes .wat {color:rgb(0, 162, 38);margin-bottom: 100px;transition: .3s;}
 
-   .redes .insta:hover {color:red;margin-bottom: 125px;}
-   .redes .face:hover {color:rgb(0, 26, 255);margin-bottom: 125px;padding: 45px;}
-   .redes .wat:hover {color:rgb(0, 162, 38);margin-bottom: 125px;}
+ 
+.redes .insta:hover {color:rgb(255, 0, 0);margin-bottom: 100px;transition: .3s;}
 
-
-
-  .redes .insta , .face , .wat {margin-top: 500px;display: flex;}
+ 
