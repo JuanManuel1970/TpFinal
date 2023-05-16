@@ -1,0 +1,121 @@
+html,body{
+    background: url("../imagenes/fondoContacto.jpg")no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;}
+
+.contactanos{ 
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-form{
+width: 100vh;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 50px;
+margin-top: 90px;
+}
+
+.container-form h2{
+margin-bottom: 15px;
+font-size: 45px;
+}
+
+.container-form p{
+font-size: 17px;
+line-height: 1.6;
+margin-bottom: 30px;
+}
+
+.container-form a{
+font-size: 17px;
+display: inline-block;
+text-decoration: none;
+width: 100%;
+margin-bottom: 15px;
+color: #000000;
+font-weight: 700;
+box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+background: rgba(255, 255, 255, 0.1);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+backdrop-filter: blur(5px);
+
+transition: all 300ms;
+}
+
+.container-form a i{
+color: orange;
+margin-right: 10px;
+
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5em 1em;
+    font-size: 1em;
+    border: 2px solid rgb(3, 123, 235);
+    margin-bottom: 2em;
+    border-radius: 3px;
+    outline: 0px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+   
+    transition: all 300ms;
+}
+
+.container-form form textarea{
+max-width: 530px;
+min-width: 530px;
+min-height: 140px;
+max-height: 150px;
+} 
+
+.container-form form .btn-enviar{
+    width: auto;
+    padding: 1.5em;
+    font-size: 1em;
+    border: none;
+    outline: 0px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 10px;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+}
+
+
+
+.container-form .btn-enviar:hover{
+    background:#049918;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .container-form {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container-form form .campo, textarea {
+        font-size: 0.9em;
+    }
+}

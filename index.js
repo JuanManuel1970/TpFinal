@@ -78,9 +78,9 @@ app.get('/calculadora', (req, res) => {
 
 
 
-app.get('/sprint1', (req, res) => {
-    res.render('sprint1', {
-        titulo: 'sprint1'
+app.get('/public/escuelaNautica', (req, res) => {
+    res.render('escuelaNautica', {
+        titulo: 'escuelaNautica'
     })
 })
 
@@ -115,9 +115,7 @@ app.post('/', (req, res) =>{
                 user: process.env.EMAIL,
                 pass: process.env.EMAILPASSWORD
             }
-        /*res.json({
-            probando: ` deploy sin la base de datos`
-        })*/
+       
         });
        
         let info = await transporter.sendMail({
